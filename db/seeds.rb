@@ -3,7 +3,7 @@
 #
 # Examples:
 #
-#   cit = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
+#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 movies = [{:title => 'Aladdin', :rating => 'G', :release_date => '25-Nov-1992'},
