@@ -24,6 +24,12 @@ class MoviesController < ApplicationController
     @movie = Movie.find params[:id]
   end
 
+  def sort
+    @column = params[:id]
+    @movies = Movie.find(:all,:order=>"#{@column}")
+    render :action=>"index"
+  end
+	
   def update
     @movie = Movie.find params[:id]
     @movie.update_attributes!(params[:movie])
